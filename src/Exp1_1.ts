@@ -1,0 +1,12 @@
+// Program to demonstrate simple data types in TypeScript
+let age: number = 20;
+let marks: number = 95.5;
+let name: string = "Jyothsna";
+let college: string = "SVECW";
+let isHappy: boolean = true;
+let isPlaced: boolean = false;
+console.log("Name:", name);
+console.log("College:", college);
+console.log("Age:", age);
+console.log("Marks:", marks);
+console.log("Is Happy?:", isHappy);
