@@ -1,18 +1,15 @@
-// Importing constants and interface
-import { PASS_MARKS, COLLEGE_NAME } from "./Config";
+import { PASS_MARKS, COLLEGE_NAME } from "../Config";
 export class Result {
     student;
     constructor(student) {
         this.student = student;
     }
-    // Check Pass/Fail
     getResult() {
         if (this.student.marks >= PASS_MARKS)
             return "PASS";
         else
             return "FAIL";
     }
-    // Display Result
     displayResult() {
         console.log("------ Student Result ------");
         console.log("College :", COLLEGE_NAME);
@@ -23,4 +20,3 @@ export class Result {
         console.log("----------------------------");
     }
 }
-//# sourceMappingURL=ResultLogic.js.map

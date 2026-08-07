@@ -1,13 +1,9 @@
-// Program to demonstrate Functions in TypeScript
-//Function with Parameters and Explicit Return Type
 function add(a, b) {
     return a + b;
 }
-//Function with Default Parameter
 function greet(name = "Guest") {
     console.log("Welcome " + name);
 }
-//Function with Optional Parameter
 function displayStudent(name, age) {
     if (age !== undefined) {
         console.log("Name: " + name + ", Age: " + age);
@@ -16,7 +12,6 @@ function displayStudent(name, age) {
         console.log("Name: " + name);
     }
 }
-//Function with Rest Parameters
 function totalMarks(...marks) {
     let sum = 0;
     for (let mark of marks) {
@@ -24,7 +19,6 @@ function totalMarks(...marks) {
     }
     return sum;
 }
-//Function Calls
 console.log("Addition =", add(10, 20));
 greet("Jyothsna");
 greet();
@@ -32,4 +26,3 @@ displayStudent("Jyothsna", 20);
 displayStudent("Sai");
 console.log("Total Marks =", totalMarks(85, 90, 95));
 export {};
-//# sourceMappingURL=Exp2_1.js.map

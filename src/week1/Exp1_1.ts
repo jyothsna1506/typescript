@@ -1,4 +1,3 @@
-// Program to demonstrate simple data types in TypeScript
 let age: number = 20;
 let marks: number = 95.5;
 let name: string = "Jyothsna";

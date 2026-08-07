@@ -1,58 +1,25 @@
-// Program to demonstrate Readonly and Static Properties
-
 class Library {
-
-    // Static Readonly Property
     public static readonly libraryName: string = "SVECW Central Library";
-
-    // Static Property
     public static totalBooksIssued: number = 0;
-
-    // Readonly Property
     public readonly bookId: string;
-
-    // Normal Property
     public bookName: string;
-
-    // Constructor
     constructor(bookName: string, bookId: string) {
         this.bookName = bookName;
         this.bookId = bookId;
-
-        // Increment Static Property
         Library.totalBooksIssued++;
     }
-
-    // Static Method
     public static showLibraryInfo(): void {
         console.log("Library Name:", Library.libraryName);
     }
-
-    // Instance Method
     public displayBook(): void {
         console.log("Book Name :", this.bookName);
         console.log("Book ID   :", this.bookId);
     }
 }
-
-//Execution
-
-// Access Static Members
 Library.showLibraryInfo();
-
-// Create Objects
 let book1 = new Library("TypeScript Basics", "TS101");
 let book2 = new Library("Java Programming", "JV202");
-
-// Display Book Details
 book1.displayBook();
 book2.displayBook();
-
-// Testing Readonly
 console.log("Book ID:", book1.bookId);
-
-// book1.bookId = "TS999";
-// Error: Cannot assign to 'bookId' because it is a read-only property.
-
-// Testing Static Property
 console.log("Total Books Issued:", Library.totalBooksIssued);

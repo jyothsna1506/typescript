@@ -1,25 +1,16 @@
-// Importing constants and interface
-
 import { PASS_MARKS, COLLEGE_NAME } from "./Config";
 import { Student } from "./Student";
-
 export class Result {
-
     constructor(
         public student: Student
     ) {}
-
-    // Check Pass/Fail
     public getResult(): string {
         if (this.student.marks >= PASS_MARKS)
             return "PASS";
         else
             return "FAIL";
     }
-
-    // Display Result
     public displayResult(): void {
-
         console.log("------ Student Result ------");
         console.log("College :", COLLEGE_NAME);
         console.log("Name    :", this.student.name);
