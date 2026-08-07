@@ -1,25 +1,14 @@
-// Program to demonstrate Special Types in TypeScript
-
-// any type
-let value: any = 100;
+let flexiblevalue: any = 100;
 console.log("Any (Number):", value);
-
-value = "Hello";
+flexiblevalue = "Hello";
 console.log("Any (String):", value);
-
-value = true;
+flexiblevalue = true;
 console.log("Any (Boolean):", value);
-
-// unknown type
-let data: unknown = "TypeScript";
-
-if (typeof data === "string") {
+let mysterydata: unknown = "Jyothsna";
+if (typeof mysterydata === "string") {
     console.log("Unknown (String):", data.toUpperCase());
 }
-
-// void type
 function greet(): void {
     console.log("Welcome to TypeScript");
 }
-
 greet();
